@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #808080;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            resize: none;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #808080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #606060;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #808080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fake News Prediction </h1>
+    </header>
+    <main>
+        <form action="/" method="POST">
+            <label for="news_input"> Enter News to check if it's fake or not fake:</label>
+            <textarea id="news_input" name="news_input" rows="10" cols="50"></textarea>
+            <input type="submit" value="Check News">
+        </form>
+    </main>
+    <footer>
+        <p>
+           
+        </p>
+        <p>
+            Created by May , Monerah , Nada  , 
+         </footer>
+</body>
+</html>

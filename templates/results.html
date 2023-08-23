@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #808080;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #808080;
+        }
+        .fake {
+            color: red;
+        }
+        .not-fake {
+            color: green;
+        }
+        a {
+            display: inline-block;
+            background-color: #808080;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #606060;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fake News Prediction Result</h1>
+    </header>
+    <main>
+        <h2>The news is predicted to be: <span class="{{ 'not-fake' if prediction_text == 'Not Fake News' else 'fake' }}">{{ prediction_text }}</span></h2>
+        <a href="/">Check another news</a>
+    </main>
+</body>
+</html>
